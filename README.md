@@ -1,4 +1,4 @@
-## `prefect` code examples
+# `prefect` code examples
 
 ### using the `@flow` decorator
 - [basic flow usage](flows/basic.py)
