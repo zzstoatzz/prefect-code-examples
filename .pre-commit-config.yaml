@@ -1,7 +1,7 @@
 repos:
   - repo: local
     hooks:
-      - id: custom-script
-        name: Custom Script
+      - id: dump-structured-readme
+        name: Dump structured readme
         entry: python scripts/validate_readme.py
         language: system
