@@ -1,5 +1,5 @@
 ## `prefect` code examples
 
 ### using the `@flow` decorator
-- [basic usage](flows/basic.py)
-- [basic async usage](flows/async_basic.py)
+- [basic flow usage](flows/basic.py)
+- [basic async flow usage](flows/async_basic.py)
