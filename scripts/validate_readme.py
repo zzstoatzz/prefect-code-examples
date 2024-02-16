@@ -35,4 +35,5 @@ def validate_readme():
     return Readme.model_validate(dict(title=title, categories=categories))
 
 if __name__ == "__main__":
-    assert isinstance(validate_readme(), Readme), "Invalid README.md"
+    readme = validate_readme()
+    (Path(__file__).parent.parent / "views/README.json").write_text(readme.model_dump_json(indent=2))

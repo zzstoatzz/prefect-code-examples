@@ -1,0 +1,7 @@
+repos:
+  - repo: local
+    hooks:
+      - id: custom-script
+        name: Custom Script
+        entry: python scripts/validate_readme.py
+        language: system
