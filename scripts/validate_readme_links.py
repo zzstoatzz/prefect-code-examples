@@ -1,4 +1,5 @@
 import asyncio
+from pathlib import Path
 import httpx
 
 from models import Readme
@@ -12,3 +13,14 @@ async def validate_links(readme: Readme):
         ])
     
     assert all(response.status_code == 200 for response in responses), "One or more examples are not accessible"
+    
+    print("All links are valid")
+
+if __name__ == "__main__":
+    asyncio.run(
+        validate_links(
+            Readme.model_validate_json(
+                (Path(__file__).parent.parent / "views/README.json").read_text()
+            )
+        )
+    )
