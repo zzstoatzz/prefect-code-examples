@@ -2,7 +2,7 @@
   "title": "`prefect` code examples",
   "categories": [
     {
-      "name": "using the `@flow` decorator",
+      "name": "`flows`: using the `@flow` decorator",
       "examples": [
         {
           "description": "basic flow usage",
