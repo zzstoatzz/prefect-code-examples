@@ -1,7 +1,7 @@
 repos:
   - repo: local
     hooks:
-      - id: dump-structured-readme-and-validate-links
-        name: Dump structured readme and validate links
-        entry: python scripts/validate_readme.py
+      - id: dump-structured-readme
+        name: Dump structured readme
+        entry: python scripts/validate_readme_structure.py
         language: system

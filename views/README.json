@@ -6,11 +6,11 @@
       "examples": [
         {
           "description": "basic flow usage",
-          "relative_path": "flows/basic.py"
+          "relative_path": "examples/flows/basic.py"
         },
         {
           "description": "basic async flow usage",
-          "relative_path": "flows/async_basic.py"
+          "relative_path": "examples/flows/async_basic.py"
         }
       ]
     }

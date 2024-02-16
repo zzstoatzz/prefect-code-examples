@@ -21,5 +21,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -U pydantic httpx
-    - name: Validate README
-      run: python scripts/validate_readme.py
+
+    - name: Validate README structure
+      run: python scripts/validate_readme_structure.py
+    
+    - name: Validate README links
+      run: python scripts/validate_readme_links.py
