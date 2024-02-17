@@ -13,6 +13,19 @@
           "relative_path": "examples/flows/async_basic.py"
         }
       ]
+    },
+    {
+      "name": "`tasks`: using the `@task` decorator",
+      "examples": [
+        {
+          "description": "basic task usage",
+          "relative_path": "examples/tasks/basic.py"
+        },
+        {
+          "description": "submitting task runs",
+          "relative_path": "examples/tasks/submitting.py"
+        }
+      ]
     }
   ]
 }
