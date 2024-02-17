@@ -32,7 +32,7 @@ def work_i_need_to_do_sometimes(keys: list[str]):
     
     create_markdown_artifact(
         markdown=(
-            "![](https://t.ly/xsf5J)\n"
+            "![image](https://t.ly/xsf5J)\n"
             f"## processed data for {keys_repr}\n\n```json\n"
             f"{json.dumps([f.result().model_dump() for f in futures], indent=2)}\n```"
         ),
