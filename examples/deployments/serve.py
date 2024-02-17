@@ -1,3 +1,4 @@
+import json
 import time
 from prefect import flow, task
 from prefect.artifacts import create_markdown_artifact
@@ -27,12 +28,13 @@ def work_i_need_to_do_sometimes(keys: list[str]):
     
     raw_data_futures = fetch_data_for_key.map(keys)
 
-    data_futures = process_data.map(raw_data_futures)
+    futures = process_data.map(raw_data_futures)
     
     create_markdown_artifact(
         markdown=(
+            "![](https://t.ly/xsf5J)\n"
             f"## processed data for {keys_repr}\n\n```json\n"
-            f"{[d.result().model_dump_json(indent=2) for d in data_futures]}\n```"
+            f"{json.dumps([f.result().model_dump() for f in futures], indent=2)}\n```"
         ),
         key=keys_repr,
     )
