@@ -26,6 +26,15 @@
           "relative_path": "examples/tasks/submitting.py"
         }
       ]
+    },
+    {
+      "name": "`deployments`: remote configuration and execution of flows",
+      "examples": [
+        {
+          "description": "(serve) a basic ETL that processes inputs",
+          "relative_path": "examples/deployments/serve.py"
+        }
+      ]
     }
   ]
 }

@@ -21,3 +21,6 @@
 ### `tasks`: using the `@task` decorator
 - [basic task usage](examples/tasks/basic.py)
 - [submitting task runs](examples/tasks/submitting.py)
+
+### `deployments`: remote configuration and execution of flows
+- [(serve) a basic ETL that processes inputs](examples/deployments/serve.py)
