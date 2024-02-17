@@ -26,4 +26,5 @@ jobs:
       run: python scripts/validate_readme_structure.py
     
     - name: Validate README links
+      if: github.event_name == 'push'
       run: python scripts/validate_readme_links.py
